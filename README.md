@@ -15,15 +15,15 @@ for study dont sue us
 | STT    | MSSV          | Họ và Tên              
 | ------ |:-------------:| ----------------------
 | 1      | 23520070      | Phạm Ngô Quốc Anh      
-| 2      | 21520930      | Nguyễn Văn Đức Huy        
+| 2      | 23520514      | Đoàn Thái Hoàng       
 | 3      | 23520021      | Nguyễn Tri An       
 | 4      | 22521188      | Phạm Phú Minh Quân
 
 ## GIỚI THIỆU MÔN HỌC
-* **Tên môn học:** Máy học
-* **Mã môn học:** CS114.Q21
+* **Tên môn học:** Mạng neural và thuật giải di truyền
+* **Mã môn học:** CS410.Q21
 * **Năm học:** HK2 (2025 - 2026)
-* **Giảng viên**: Võ Nguyễn Lê Duy
+* **Giảng viên**: T.S Lương Ngọc Hoàng
 
 ### HƯỚNG DẪN CHẠY DEMO
 
