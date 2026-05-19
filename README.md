@@ -57,6 +57,26 @@ Sau khi chạy thành công, mở trình duyệt web và truy cập vào đườ
 
 **Cách 2: Chạy trực tiếp qua dòng lệnh (CLI)**
 ```bash
+# Chạy với Ollama (mặc định)
 python main.py
+
+# Chạy với Hugging Face (Tải trực tiếp model vào VRAM - Khuyên dùng trên Kaggle/Colab có GPU)
+python main.py --use_hf -m Qwen/Qwen2.5-1.5B-Instruct
 ```
 Bạn có thể tùy chỉnh các tham số như số lượng đột biến, số thế hệ... bằng cách truyền tham số (ví dụ: `python main.py -mp 2 -ts 4`). Xem thêm chi tiết trong file `main.py`.
+
+---
+
+### 🚀 Hướng dẫn chạy trên Kaggle (Không cần chạy Ollama server)
+Kaggle cung cấp GPU miễn phí (T4 hoặc P100) có sẵn VRAM 16GB. Bạn có thể sử dụng trực tiếp Hugging Face để tải model vào VRAM:
+
+1. **Bật GPU** ở phần **Settings** -> **Accelerator** -> Chọn **GPU T4** hoặc **P100**.
+2. **Cài đặt thư viện**:
+   ```python
+   !pip install -r requirements.txt
+   ```
+3. **Chạy chương trình** bằng cờ `--use_hf` (chương trình sẽ tự tải model Qwen và chạy trực tiếp trên GPU):
+   ```python
+   !python main.py --use_hf -m Qwen/Qwen2.5-1.5B-Instruct -mp 2 -ts 4 -e 10 -n 10
+   ```
+
