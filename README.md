@@ -8,8 +8,8 @@ for study dont sue us
   </a>
 </p>
 
-<h1 align="center"><b>MÁY HỌC</b></h>
-<h2 align="center"><b>Dự đoán bệnh tiểu đường</b></h>
+<h1 align="center"><b>Mạng neural và thuật giải di truyền</b></h>
+<h2 align="center"><b>Promptbreeder: Self-Referential Self-Improvement via Prompt Evolution</b></h>
 
 ## THÀNH VIÊN NHÓM 1
 | STT    | MSSV          | Họ và Tên              
