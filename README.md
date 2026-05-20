@@ -16,7 +16,7 @@ for study dont sue us
 | ------ |:-------------:| ----------------------
 | 1      | 23520070      | Phạm Ngô Quốc Anh      
 | 2      | 23520514      | Đoàn Thái Hoàng       
-| 3      | 23520021      | Nguyễn Tri An       
+| 3      | 23521636      | Đặng Minh Trí        
 | 4      | 22521188      | Phạm Phú Minh Quân
 
 ## GIỚI THIỆU MÔN HỌC
