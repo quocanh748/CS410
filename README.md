@@ -59,19 +59,19 @@ Dự án có cấu trúc chính như sau:
 
 Đây là tiến trình chạy thuật toán PromptBreeder để tìm kiếm và tối ưu hóa các prompt qua nhiều thế hệ tiến hóa đột biến.
 
-**Cách 1: Chạy giao diện Web (Streamlit) - Trực quan nhất**
+**Cách 1: Chạy giao diện Web (Streamlit)**
 ```bash
 streamlit run sl_main.py
 ```
 Sau khi chạy thành công, mở trình duyệt web và truy cập vào địa chỉ hiển thị trên terminal (thường là `http://localhost:8501`). Bạn có thể chọn các phong cách tư duy (T), các câu lệnh đột biến (M), cấu hình số lượng thế hệ và theo dõi biểu đồ phân bố fitness theo thời gian thực.
 
-**Cách 2: Chạy trực tiếp qua dòng lệnh (CLI)**
+**Cách 2: Chạy trực tiếp qua dòng lệnh**
 ```bash
 python main.py
 ```
 Bạn có thể tùy chỉnh các tham số như số lượng đột biến, số thế hệ... bằng cách truyền tham số (ví dụ: `python main.py -mp 2 -ts 4`). Xem thêm chi tiết trong file `main.py`.
 
-4. Hướng dẫn chạy Demo giải toán (So sánh Prompt đã tiến hóa vs Baseline)
+4. Hướng dẫn chạy Demo giải toán và so sánh Prompt đã tiến hóa với Baseline
 
 Sau khi quá trình tiến hóa hoàn tất và tìm ra prompt tốt nhất (ở Generation 16 với Fitness đạt 75%), bạn có thể chạy ứng dụng demo để so sánh khả năng giải toán của prompt tối ưu này so với prompt thông thường (Baseline).
 
