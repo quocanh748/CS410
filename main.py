@@ -9,6 +9,7 @@ import asyncio
 
 from dotenv import load_dotenv
 from rich import print
+from pb.local_model import LocalClient
 
 load_dotenv() # load environment variables
 
@@ -21,22 +22,13 @@ parser.add_argument('-ts', '--num_thinking_styles', type=int, default=4)
 parser.add_argument('-e', '--num_evals', type=int, default=10)     
 parser.add_argument('-n', '--simulations', type=int, default=10)     
 parser.add_argument('-p', '--problem', type=str, default="Solve the math word problem, giving your answer as an arabic numeral.")       
-parser.add_argument('--use_hf', action='store_true', help='Use Hugging Face model loaded directly in VRAM instead of Ollama')
-parser.add_argument('-m', '--model', type=str, default=None, help='Model name. (Defaults: HF -> "Qwen/Qwen2.5-1.5B-Instruct", Ollama -> "qwen2.5:1.5b")')
 
 args = vars(parser.parse_args())
 
 total_evaluations = args['num_mutation_prompts']*args['num_thinking_styles']*args['num_evals']
 
-# Initialize Model Client based on --use_hf flag
-if args['use_hf']:
-    from pb.hf_model import HFClient
-    model_name = args['model'] if args['model'] else "Qwen/Qwen2.5-1.5B-Instruct"
-    co = HFClient(model_name=model_name)
-else:
-    from pb.local_model import LocalClient
-    model_name = args['model'] if args['model'] else "qwen2.5:1.5b"
-    co = LocalClient(model_name=model_name)
+# Using LocalClient (Ollama)
+co = LocalClient(model_name="qwen2.5:1.5b")
 
 tp_set = mutation_prompts[:int(args['num_mutation_prompts'])]
 mutator_set= thinking_styles[:int(args['num_thinking_styles'])]

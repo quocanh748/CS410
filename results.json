@@ -1,0 +1,58 @@
+[
+    {
+        "question": "Tobias is buying a new pair of shoes that costs $95. He has been saving up his money each month for the past three months. He gets a $5 allowance a month. He also mows lawns and shovels driveways. He charges $15 to mow a lawn and $7 to shovel. After buying the shoes, he has $15 in change. If he mows 4 lawns, how many driveways did he shovel?",
+        "gt_answer": "5",
+        "zero_shot": {
+            "answer": "2",
+            "completion": "To determine how many driveways Tobias shoveled, we need to follow these steps:\n\n1. Calculate the total amount of money Tobias saved over the past three months.\n2. Determine how much money he had left after buying the shoes.\n3. Use this information to find out how much he earned from mowing lawns and shoveling driveways.\n\nFirst, let's calculate the total amount of money Tobias saved:\n- He gets a $5 allowance each month for 3 months: \\( 5 \\times 3 = \\$15 \\).\n- He charges $15 to mow one lawn.\n- He charges $7 to shovel one driveway.\n- He mowed 4 lawns, so he earned \\( 4 \\times 15 = \\$60 \\) from mowing lawns.\n\nLet's denote the number of driveways Tobias shoveled as \\( x \\). The total amount of money he earned from shoveling driveways is \\( 7x \\).\n\nThe total amount of money Tobias saved over the past three months is the sum of his allowance, the money he earned from mowing lawns, and the money he earned from shoveling driveways:\n\\[ 15 + 60 + 7x = \\$95 \\]\n\nNow we solve for \\( x \\):\n\\[ 75 + 7x = 95 \\]\n\\[ 7x = 20 \\]\n\\[ x = \\frac{20}{7} \\approx 2.86 \\]\n\nSince the number of driveways must be a whole number, Tobias shoveled 2 driveways.\n\nTo verify:\n- He earned \\( 7 \\times 2 = \\$14 \\) from shoveling.\n- Total money saved: \\( 15 + 60 + 14 = \\$99 \\), which is close to $95 due to rounding, but the exact calculation confirms he had exactly $95 left after buying the shoes.\n\nTherefore, Tobias shoveled 2 driveways.",
+            "correct": false
+        },
+        "pb": {
+            "answer": "5",
+            "completion": "To determine how many driveways Tobias shoveled, we need to follow these steps:\n\n1. Calculate the total amount of money Tobias saved over the past three months.\n2. Determine how much money he had left after buying the shoes.\n3. Use this information to find out how much he earned from mowing lawns and shoveling driveways.\n\nFirst, let's calculate the total amount of money Tobias saved:\n- He gets a $5 allowance each month for 3 months: \\(5 \\times 3 = 15\\) dollars.\n- He has $15 in change after buying the shoes. Therefore, the total amount he had before buying the shoes is \\(95 + 15 = 110\\) dollars.\n\nNext, we know that Tobias mowed 4 lawns and earned $15 per lawn:\n\\[4 \\times 15 = 60\\] dollars from mowing lawns.\nLet's denote the number of driveways he shoveled as \\(x\\). He earns $7 per driveway:\n\\[7x\\] dollars from shoveling driveways.\n\nThe total amount of money Tobias had before buying the shoes is the sum of his savings and the money earned from mowing lawns and shoveling driveways:\n\\[15 + 60 + 7x = 110.\\]\n\nNow, we solve for \\(x\\):\n\\[75 + 7x = 110,\\]\n\\[7x = 35,\\]\n\\[x = 5.\\]\n\nTherefore, Tobias shoveled \\(\\boxed{5}\\) driveways.",
+            "correct": true
+        }
+    },
+    {
+        "question": "Noah is a painter. He paints pictures and sells them at the park. He charges $60 for a large painting and $30 for a small painting. Last month he sold eight large paintings and four small paintings. If he sold twice as much this month, how much is his sales for this month?",
+        "gt_answer": "1200",
+        "zero_shot": {
+            "answer": "1080",
+            "completion": "To determine Noah's sales for this month, we need to follow these steps:\n\n1. Calculate the total revenue from last month.\n2. Determine the increase in sales compared to last month.\n3. Calculate the total revenue for this month.\n\nFirst, let's calculate the total revenue from last month:\n- Noah sold 8 large paintings at $60 each.\n- Noah sold 4 small paintings at $30 each.\n\nThe revenue from large paintings is:\n\\[ 8 \\text{ large paintings} \\times \\$60 \\text{ per painting} = \\$480 \\]\n\nThe revenue from small paintings is:\n\\[ 4 \\text{ small paintings} \\times \\$30 \\text{ per painting} = \\$120 \\]\n\nAdding these amounts together gives the total revenue for last month:\n\\[ \\$480 + \\$120 = \\$600 \\]\n\nNext, we need to find out how much more Noah sold this month compared to last month. Since he sold twice as much this month, we multiply his sales from last month by 2:\n\\[ 2 \\times (\\text{revenue from large paintings}) + (\\text{revenue from small paintings}) = 2 \\times \\$480 + \\$120 = \\$960 + \\$120 = \\$1080 \\]\n\nTherefore, Noah's sales for this month are:\n\\[ \\boxed{1080} \\]",
+            "correct": false
+        },
+        "pb": {
+            "answer": "1200",
+            "completion": "To determine Noah's total sales for this month, we need to follow these steps:\n\n1. Calculate the revenue from last month.\n2. Determine the increase in sales due to the doubling of the previous month's sales.\n3. Add the increased sales amount to the revenue from last month.\n\nFirst, let's calculate the revenue from last month:\n- Noah sold 8 large paintings at $60 each.\n- He also sold 4 small paintings at $30 each.\n\nThe revenue from the large paintings is:\n\\[ 8 \\times 60 = 480 \\text{ dollars} \\]\n\nThe revenue from the small paintings is:\n\\[ 4 \\times 30 = 120 \\text{ dollars} \\]\n\nAdding these amounts together gives the total sales for last month:\n\\[ 480 + 120 = 600 \\text{ dollars} \\]\n\nSince Noah sold twice as much this month, we need to double his sales from last month:\n\\[ 600 \\times 2 = 1200 \\text{ dollars} \\]\n\nTherefore, the total amount of money Noah has made for this month is:\n\\[\n\\boxed{1200}\n\\]",
+            "correct": true
+        }
+    },
+    {
+        "question": "To make pizza, together with other ingredients, Kimber needs 10 cups of water, 16 cups of flour, and 1/2 times as many teaspoons of salt as the number of cups of flour. Calculate the combined total number of cups of water, flour, and teaspoons of salt that she needs to make the pizza.",
+        "gt_answer": "34",
+        "zero_shot": {
+            "answer": "8",
+            "completion": "To determine the combined total number of cups of water, flour, and teaspoons of salt Kimber needs for her pizza, we will calculate each component separately and then sum them up.\n\n1. **Cups of Water:**\n   Kimber needs 10 cups of water.\n   \\[\n   \\text{Water} = 10 \\text{ cups}\n   \\]\n\n2. **Cups of Flour:**\n   Kimber needs 16 cups of flour.\n   \\[\n   \\text{Flour} = 16 \\text{ cups}\n   \\]\n\n3. **Teaspoons of Salt:**\n   Kimber needs 1/2 times as many teaspoons of salt as the number of cups of flour. Since she has 16 cups of flour, we calculate:\n   \\[\n   \\text{Teaspoons of Salt} = \\frac{1}{2} \\times 16 = 8 \\text{ teaspoons}\n   \\]\n\nNow, we sum up all these quantities to find the combined total:\n\\[\n\\text{Total} = \\text{Water} + \\text{Flour} + \\text{Teaspoons of Salt} = 10 \\text{ cups} + 16 \\text{ cups} + 8 \\text{ teaspoons}\n\\]\n\nAdding these together gives:\n\\[\n\\text{Total} = 34 \\text{ cups and } 8 \\text{ teaspoons}\n\\]\n\nThus, the combined total number of cups of water, flour, and teaspoons of salt that Kimber needs to make the pizza is:\n\\[\n\\boxed{34 \\text{ cups and } 8 \\text{ teaspoons}}\n\\]",
+            "correct": false
+        },
+        "pb": {
+            "answer": "34",
+            "completion": "To determine the combined total number of cups of water, flour, and teaspoons of salt Kimber needs for making the pizza, we will calculate each component step by step.\n\n1. **Calculate the amount of water needed:**\n   Kimber needs 10 cups of water.\n   \\[\n   \\text{Water} = 10 \\text{ cups}\n   \\]\n\n2. **Calculate the amount of flour needed:**\n   Kimber needs 16 cups of flour.\n   \\[\n   \\text{Flour} = 16 \\text{ cups}\n   \\]\n\n3. **Calculate the amount of salt needed:**\n   The problem states that Kimber needs half as many teaspoons of salt as the number of cups of flour. Therefore, we need to find half of 16 cups.\n   \\[\n   \\text{Salt} = \\frac{1}{2} \\times 16 = 8 \\text{ teaspoons}\n   \\]\n\n4. **Calculate the combined total:**\n   Add the amounts of water, flour, and salt together.\n   \\[\n   \\text{Total} = \\text{Water} + \\text{Flour} + \\text{Salt} = 10 + 16 + 8\n   \\]\n\n5. **Perform the addition:**\n   \\[\n   10 + 16 = 26\n   \\]\n   \\[\n   26 + 8 = 34\n   \\]\n\nTherefore, the combined total number of cups of water, flour, and teaspoons of salt that Kimber needs to make the pizza is:\n\\[\n\\boxed{34}\n\\]",
+            "correct": true
+        }
+    },
+    {
+        "question": "Mr. Sanchez found out that 40% of his Grade 5  students got a final grade below B. How many of his students got a final grade of B and above if he has 60 students in Grade 5?",
+        "gt_answer": "36",
+        "zero_shot": {
+            "answer": "5",
+            "completion": "To determine how many students received a final grade of B and above, we first need to calculate the number of students who did not receive a grade below B.\n\nGiven:\n- Total number of students = 60\n- Percentage of students with a final grade below B = 40%\n\nFirst, convert the percentage into a decimal for calculation:\n\\[ 40\\% = \\frac{40}{100} = 0.40 \\]\n\nNext, calculate the number of students who received a grade below B by multiplying the total number of students by this decimal:\n\\[ 60 \\times 0.40 = 24 \\]\n\nNow, subtract this number from the total number of students to find out how many students received a final grade of B and above:\n\\[ 60 - 24 = 36 \\]\n\nTherefore, 36 students in Mr. Sanchez's Grade 5 class received a final grade of B and above.",
+            "correct": false
+        },
+        "pb": {
+            "answer": "36",
+            "completion": "To determine how many students in Mr. Sanchez's Grade 5 class received a final grade of B and above, we need to follow these steps:\n\n1. Calculate the number of students who received a final grade below B.\n2. Subtract this number from the total number of students to find out how many students received a final grade of B and above.\n\nFirst, let's calculate the number of students who received a final grade below B:\n\\[ 40\\% \\text{ of } 60 = 0.40 \\times 60 = 24 \\]\n\nSo, 24 students received a final grade below B. Now, we subtract this from the total number of students to find out how many students received a final grade of B and above:\n\\[ 60 - 24 = 36 \\]\n\nTherefore, the number of students who got a final grade of B and above is \\(\\boxed{36}\\).",
+            "correct": true
+        }
+    }
+]

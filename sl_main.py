@@ -84,14 +84,7 @@ There are 12 mutations outlined by the promptbreeder paper. Only 9 are implement
 where you can use those extra 3 mutations, but I can't promise they will be exactly the same as DeepMind's implementations.
 """)
 problem_description = st.text_input("problem description", value="Solve the math word problem, giving your answer as an arabic numeral.", key="pd")
-
-model_type = st.radio("Model Provider", options=["Ollama", "Hugging Face (Load into VRAM)"], horizontal=True)
-
-if model_type == "Ollama":
-    local_model_name = st.text_input("Local Model Name (Ollama)", value="qwen2.5:1.5b")
-else:
-    local_model_name = st.text_input("Hugging Face Model ID", value="Qwen/Qwen2.5-1.5B-Instruct")
-
+local_model_name = st.text_input("Local Model Name (Ollama)", value="qwen2.5:1.5b")
 
 col1, col2, = st.columns(2)
 with col1:
@@ -142,11 +135,7 @@ if second_button:
     st.session_state.calls = st.session_state.evals*st.session_state.generations 
     st.session_state.start_time = time.time()
     st.session_state.running = True
-    if model_type == "Ollama":
-        co = LocalClient(model_name=local_model_name)
-    else:
-        from pb.hf_model import HFClient
-        co = HFClient(model_name=local_model_name)
+    co = LocalClient(model_name=local_model_name)
     st.session_state.population = init_run(st.session_state.population, co,  st.session_state.evals)
 
     fitness_avg = 0

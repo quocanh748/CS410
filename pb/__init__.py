@@ -8,11 +8,7 @@ from typing import List, Any
 
 from rich import print
 import time
-try:
-    from cohere import Client
-except ImportError:
-    Client = None
-
+from cohere import Client
 
 from pb.mutation_operators import mutate
 from pb import gsm

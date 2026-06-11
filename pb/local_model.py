@@ -28,6 +28,9 @@ class LocalClient:
         options = {}
         if 'temperature' in kwargs:
             options['temperature'] = kwargs['temperature']
+        
+        if 'num_predict' in kwargs:
+            options['num_predict'] = kwargs['num_predict']
             
         with self._semaphore:
             response = ollama.generate(model=self.model_name, prompt=prompt, options=options)
